@@ -6,7 +6,7 @@ import java.util.Stack;
 
 public class ValidParenthesisString {
 
-  static Stack<Character> stack = new Stack<Character>();
+  static Stack<Character> stack = new Stack<>();
 
   public static void main(String[] args) throws Exception {
 
@@ -19,6 +19,8 @@ public class ValidParenthesisString {
 
       sb.append(answer(br.readLine())).append("\n");
 
+
+      br.readLine().toCharArray();
     }
     System.out.println(sb);
   }
@@ -26,6 +28,16 @@ public class ValidParenthesisString {
   public static String answer(String str) {
     char[] chr = str.toCharArray();
 
+    for (char c : chr) {
+      if (c == '(') {
+        stack.push(c);
+      } else if (!stack.empty()) {
+        stack.pop();
+      } else {
+        return "NO";
+      }
+    }
+    /*
     for (int i = 0; i < chr.length; i++) {
       if (chr[i] == '(') {
         stack.push(chr[i]);
@@ -35,7 +47,7 @@ public class ValidParenthesisString {
         stack.pop();
       }
     }
-
+     */
     if (stack.empty()) {
       return "YES";
     } else {
