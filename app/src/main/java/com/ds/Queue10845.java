@@ -11,5 +11,6 @@ public class Queue10845 {
 
   public static void main(String[] args) {
 
+    // Queue 도 Stack 과 비슷한 방식으로 구현할 것
   }
 }
