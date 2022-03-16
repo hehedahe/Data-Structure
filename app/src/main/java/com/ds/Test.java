@@ -2,7 +2,6 @@ package com.ds;
 
 public class Test {
 
-
   // null --> null Type
   public static void main(String[] args) {
     User user = new User();
