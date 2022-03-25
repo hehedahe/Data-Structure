@@ -3,6 +3,7 @@ package com.ds;
 public class Test {
 
   // null --> null Type
+  // int --> Integer
   public static void main(String[] args) {
     User user = new User();
     user.setId(null);
