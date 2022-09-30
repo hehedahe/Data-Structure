@@ -13,7 +13,7 @@ public class Queue10845 {
 
   public static void main(String[] args) throws Exception {
 
-    // Queue 도 Stack 과 비슷한 방식으로 구현할 것
+//     Queue 도 Stack 과 비슷한 방식으로 구현할 것
 
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
